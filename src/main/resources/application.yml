@@ -4,6 +4,14 @@ server:
 spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
+
+  ##数据源
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.105:3306/web_db?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+
   jpa:
     ##指定数据库
     database: mysql
@@ -25,15 +33,5 @@ spring:
     mode: HTML5
     prefix: classpath:/templates/
     suffix: .html
-  ##数据源
-#  datasource:
-#    driverClassName: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://192.168.1.105:3306/web_db?useUnicode=true&characterEncoding=UTF-8
-#    username: root
-#    password: 123456
 
-  datasource:
-    url: jdbc:mysql://a.ricepon.com:53373/test
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: asdftreqe
+
