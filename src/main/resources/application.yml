@@ -10,11 +10,12 @@ spring:
     ##是否显示执行sql语句
     show-sql: true
     hibernate:
+      ##自动更新数据库表,若需要创建表则改为create
+      ddl-auto: update
       naming:
         ##字段映射规则
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      ##自动更新数据库表,若需要创建表则改为create
-      ##ddl-auto: update
+
 
 
   ##模板
